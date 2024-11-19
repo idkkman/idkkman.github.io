@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic Website</title>
+    <title>Clima Europei și României</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
         }
         header {
-            background-color: #007BFF;
+            background-color: #0056b3;
             color: white;
-            padding: 20px 10px;
+            padding: 20px;
             text-align: center;
         }
         nav {
-            background: #333;
+            background-color: #333;
             color: white;
-            padding: 10px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
         }
         nav a {
             color: white;
@@ -34,10 +35,26 @@
         }
         section {
             padding: 20px;
-            text-align: center;
+        }
+        .collapsible {
+            background-color: #f1f1f1;
+            color: #333;
+            cursor: pointer;
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            text-align: left;
+            outline: none;
+        }
+        .content {
+            padding: 0 15px;
+            display: none;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
         }
         footer {
-            background-color: #007BFF;
+            background-color: #0056b3;
             color: white;
             text-align: center;
             padding: 10px;
@@ -45,37 +62,106 @@
             bottom: 0;
             width: 100%;
         }
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <p>This is a simple HTML page</p>
+        <h1>Clima Europei și României</h1>
+        <p>Explorați informații despre factorii climatici și caracteristicile climatice</p>
     </header>
     <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="#europe">Clima Europei</a>
+        <a href="#romania">Clima României</a>
+        <a href="#regionari">Regionări Climatice</a>
     </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm a beginner learning web development. This is my first website.</p>
+
+    <section id="europe">
+        <h2>Clima Europei</h2>
+        <button class="collapsible">Factori genetici</button>
+        <div class="content">
+            <ul>
+                <li><strong>Radiativi:</strong> Radiația solară scade de la 140 kcal/cm²/an în sud la 70 kcal/cm²/an în zona rece.</li>
+                <li><strong>Fizico-geografici:</strong> Relieful influențează clima prin altitudine și orientarea lanțurilor muntoase.</li>
+                <li><strong>Dinamici:</strong> Circulația maselor de aer este predominantă de la vest la est.</li>
+                <li><strong>Antropici:</strong> Activitatea umană modifică elementele meteorologice.</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">Elemente climatice</button>
+        <div class="content">
+            <ul>
+                <li><strong>Temperatura:</strong> Variază între -4ºC în nord și 25ºC în sud.</li>
+                <li><strong>Precipitații:</strong> Distribuite neuniform, între 200 mm și 1200 mm anual.</li>
+                <li><strong>Vânturi:</strong> Diverse tipuri, cum ar fi vânturile de vest, crivățul și foehnul.</li>
+            </ul>
+        </div>
     </section>
-    <section id="services">
-        <h2>Services</h2>
-        <p>I provide the following services:</p>
-        <ul>
-            <li>Web Development</li>
-            <li>Graphic Design</li>
-            <li>SEO Optimization</li>
-        </ul>
+
+    <section id="romania">
+        <h2>Clima României</h2>
+        <button class="collapsible">Factori genetici</button>
+        <div class="content">
+            <ul>
+                <li><strong>Radiativi:</strong> Radiația solară variază între 120 kcal/cm²/an în sud și 90 kcal/cm²/an în nord.</li>
+                <li><strong>Fizico-geografici:</strong> Relieful și Marea Neagră influențează clima locală.</li>
+                <li><strong>Dinamici:</strong> Circulația aerului este predominantă de la vest la est.</li>
+                <li><strong>Antropici:</strong> Activitatea umană contribuie la modificarea climei.</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">Elemente climatice</button>
+        <div class="content">
+            <ul>
+                <li><strong>Temperatura:</strong> Variază între 11ºC în sud și 8-9ºC în nord.</li>
+                <li><strong>Precipitații:</strong> Între 400 mm în câmpii și peste 1200 mm în munți.</li>
+                <li><strong>Vânturi:</strong> Include crivățul, austrul, și brizele marine.</li>
+            </ul>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email me at: <a href="mailto:example@example.com">example@example.com</a></p>
+
+    <section id="regionari">
+        <h2>Regionări Climatice</h2>
+        <button class="collapsible">Climatul temperat-oceanic</button>
+        <div class="content">
+            <p>Caracteristic pentru vestul Europei, cu temperaturi medii anuale între 8-16ºC și precipitații uniforme.</p>
+        </div>
+        <button class="collapsible">Climatul temperat-continental</button>
+        <div class="content">
+            <p>Localizat în interiorul continentului, cu ierni aspre și veri calde.</p>
+        </div>
+        <button class="collapsible">Climatul mediteranean</button>
+        <div class="content">
+            <p>Caracteristic sudului Europei, cu ierni blânde și ploioase, și veri calde și secetoase.</p>
+        </div>
+        <button class="collapsible">Climatul subpolar</button>
+        <div class="content">
+            <p>Temperaturi medii anuale între -4ºC și 0ºC, cu precipitații scăzute sub formă de zăpadă.</p>
+        </div>
     </section>
+
     <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <p>&copy; 2024 Clima Europei și României. Toate drepturile rezervate.</p>
+        <a href="#" class="back-to-top">Înapoi la început</a>
     </footer>
+
+    <script>
+        const collapsibles = document.querySelectorAll(".collapsible");
+        collapsibles.forEach(button => {
+            button.addEventListener("click", function () {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    </script>
 </body>
 </html>
