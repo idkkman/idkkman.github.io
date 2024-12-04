@@ -1,60 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Today</title>
+    <title>Clima Europei și României</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #6dd5fa, #2980b9);
-            color: #fff;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: #0269a4;
+            color: white;
+            padding: 1rem 0;
             text-align: center;
         }
-        header {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
+
+        nav {
+            background: #02456d;
+            color: white;
+            text-align: center;
+            padding: 0.5rem 0;
         }
-        header h1 {
-            margin: 0;
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
         }
-        .weather {
-            margin: 20px auto;
-            max-width: 600px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
+
+        section {
+            padding: 1rem 2rem;
         }
-        .weather h2 {
-            margin-top: 0;
+
+        h1, h2, h3 {
+            color: #02456d;
         }
-        .weather p {
-            font-size: 18px;
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
         }
+
+        .images img {
+            max-width: 45%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
         footer {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            background: #02456d;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Weather Today</h1>
+        <h1>Clima Europei și României</h1>
+        <p>Explorează diversitatea climatică a continentului european și a României</p>
     </header>
-    <div class="weather">
-        <h2>Current Weather</h2>
-        <p>Location: <strong>New York City</strong></p>
-        <p>Temperature: <strong>25°C</strong></p>
-        <p>Condition: <strong>Sunny</strong></p>
-        <p>Wind Speed: <strong>15 km/h</strong></p>
-    </div>
+
+    <nav>
+        <a href="#europe">Clima Europei</a>
+        <a href="#romania">Clima României</a>
+    </nav>
+
+    <section id="europe">
+        <h2>Clima Europei</h2>
+        <p>Europa are o diversitate climatică impresionantă, influențată de factori genetici, fizico-geografici, dinamici și antropici.</p>
+        
+        <h3>Factori Genetici</h3>
+        <ul>
+            <li><strong>Radiativi:</strong> Radiația solară variază de la 140 kcal/cm²/an în sud la 70 kcal/cm²/an în zonele reci.</li>
+            <li><strong>Fizico-geografici:</strong> Relieful influențează temperatura și precipitațiile. Munții determină variații mari de altitudine.</li>
+            <li><strong>Circulația aerului:</strong> Predominant de la vest la est, influențează temperatura și umiditatea. Exemple includ ciclonul islandez și curentul cald al Golfului.</li>
+        </ul>
+        
+        <h3>Elemente Climatice</h3>
+        <p>
+            Temperaturile medii variază între 0°C în Peninsula Scandinavă și 25°C în sud. Precipitațiile sunt distribuite neuniform:
+            <ul>
+                <li><strong>Vest:</strong> 1000-2000 mm/an.</li>
+                <li><strong>Nordul Mării Caspice:</strong> Sub 250 mm/an.</li>
+            </ul>
+        </p>
+
+        <h3>Regiunile Climatice</h3>
+        <ul>
+            <li><strong>Climatul temperat-oceanic:</strong> Temperaturile medii anuale de 8-16°C, cu precipitații de peste 1000 mm/an.</li>
+            <li><strong>Climatul mediteranean:</strong> Ierni blânde și ploioase, veri calde și secetoase, precipitații de 600-900 mm/an.</li>
+            <li><strong>Climatul subpolar:</strong> Specific nordului, temperaturi sub -4°C și precipitații sub formă de zăpadă.</li>
+            <li><strong>Climatul montan:</strong> Temperaturi scăzute și precipitații ridicate, peste 1000 mm/an.</li>
+        </ul>
+
+        <div class="images">
+            <img src="https://www.meteoromania.ro/anm/wp-content/uploads/clima-romaniei-1.jpg" alt="Clima Europei">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT_FNBXScMtW-IkhdmfufSsQYUPQ2XVtnFs3IfwLlZ8Z0Z2fNciubapE76Gq-uxg1IL_ppdlK23uOINdB2sxgyZG_M4s0jB_VIwGbJZeCKk9JihCYAlL-459J94hYqEm4THE83tlVhlxf4/s1194/temperatura+Ro+(1).png" alt="Temperaturi în Europa">
+        </div>
+    </section>
+
+    <section id="romania">
+        <h2>Clima României</h2>
+        <p>România se află în zona temperată, cu un climat continental moderat, influențat de poziția geografică și de relief.</p>
+        
+        <h3>Factori Genetici</h3>
+        <ul>
+            <li><strong>Relieful:</strong> Munții Carpați influențează circulația aerului și cantitatea de precipitații.</li>
+            <li><strong>Marea Neagră:</strong> Afectează zonele de coastă, pe o fâșie îngustă de 30-40 km.</li>
+        </ul>
+
+        <h3>Elemente Climatice</h3>
+        <ul>
+            <li><strong>Temperaturi:</strong> De la 23°C vara în Câmpia Română la -11°C iarna în Carpați.</li>
+            <li><strong>Precipitații:</strong>
+                <ul>
+                    <li>400-500 mm/an în câmpii.</li>
+                    <li>1200 mm/an la altitudini mari.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Vânturi Caracteristice</h3>
+        <ul>
+            <li><strong>Crivăț:</strong> Specific iernilor, aduce viscole puternice.</li>
+            <li><strong>Foehn:</strong> Determină topirea zăpezilor în regiunile submontane.</li>
+            <li><strong>Brize marine:</strong> Influentează litoralul.</li>
+        </ul>
+        
+        <div class="images">
+            <img src="https://www.meteoromania.ro/anm/wp-content/uploads/clima-romaniei-1.jpg" alt="Harta climatică a României">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT_FNBXScMtW-IkhdmfufSsQYUPQ2XVtnFs3IfwLlZ8Z0Z2fNciubapE76Gq-uxg1IL_ppdlK23uOINdB2sxgyZG_M4s0jB_VIwGbJZeCKk9JihCYAlL-459J94hYqEm4THE83tlVhlxf4/s1194/temperatura+Ro+(1).png" alt="Temperaturi medii în România">
+        </div>
+    </section>
+
     <footer>
-        <p>© 2024 Weather Today. All Rights Reserved.</p>
+        <p>© 2024 - Clima Europei și României | Proiect realizat pentru studii geografice.</p>
     </footer>
 </body>
+
 </html>
